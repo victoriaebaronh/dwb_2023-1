@@ -17,7 +17,7 @@ spring:
           uri: lb://customer-service
           predicates:
           - Path=/region/**,/customer/**,/customer-image/**
-        - id: product-service
-          uri: lb://product-service
+        - id: invoice-service
+          uri: lb://invoice-service
           predicates:
-          - Path=/category/**,/product/**,/product-image/**
+          - Path=/invoice/**,/invoice/**,/invoice-image/**
