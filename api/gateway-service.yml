@@ -16,18 +16,8 @@ spring:
         - id: customer-service
           uri: lb://customer-service
           predicates:
-            - Path=/region/**
-            - Path=/customer/**
-            - Path=/customer-image/**
-        - id: invoice-service
-          uri: lb://invoice-service
-          predicates:
-            - Path=/invoice/**
-            - Path=/invoice/**
-            - Path=/invoice-image/**
+          - Path=/region/**,/customer/**,/customer-image/**
         - id: product-service
           uri: lb://product-service
           predicates:
-            - Path=/category/**
-            - Path=/product/**
-            - Path=/product-image/**
+          - Path=/category/**,/product/**,/product-image/**
