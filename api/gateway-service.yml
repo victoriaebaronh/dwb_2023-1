@@ -24,4 +24,4 @@ spring:
         - id: invoice-service
           uri: lb://invoice-service
           predicates:
-          - Path=/invoice/**,/invoice/**,/invoice-image/**
+          - Path=/invoice/**,/invoice/**,/cart/**
